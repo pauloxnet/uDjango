@@ -78,7 +78,7 @@ This code is for demonstration purposes only and should not be used in productio
 
 ## ⚖️ License
 
-**Django Queries** is licensed under the [BSD 3-Clause License](https://github.com/pauloxnet/uDjango/blob/main/LICENSE).
+**μDjango** is licensed under the [BSD 3-Clause License](https://github.com/pauloxnet/uDjango/blob/main/LICENSE).
 
 ## 👥 Authors
 
