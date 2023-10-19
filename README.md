@@ -4,7 +4,7 @@ A single file Django micro project created for demonstration purposes to be used
 
 ## 🏛️ History
 
-I created this code while working on an improvement to Will Vincent's Django Microframewrok repository, which was itself inspired by Carlton Gibson's talk.
+I created this code while working on an improvement to Will Vincent's Django Microframework repository, which was itself inspired by Carlton Gibson's talk.
 
 Starting from that demonstration code I thought of a Django micro application that could be used in the same way as a minimal application used in other Python frameworks such as Flask or FastAPI.
 
