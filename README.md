@@ -85,6 +85,6 @@ This code is for demonstration purposes only and should not be used in productio
 ### 👤 Paolo Melchiorre
 
 -   🌍 Blog: [www.paulox.net](https://www.paulox.net)
--   🐙 Github: [@pauloxnet](https://github.com/pauloxnet)
+-   🐙 Github: [@pauloxnet@github.com](https://github.com/pauloxnet)
 -   🦣 Mastodon: [@paulox@fosstodon.org](https://fosstodon.org/@paulox)
--   🐦️ Twitter: [@pauloxnet](https://twitter.com/pauloxnet)
+-   🐦️ Twitter: [@pauloxnet@twitter.com](https://twitter.com/pauloxnet)
