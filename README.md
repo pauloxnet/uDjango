@@ -4,11 +4,11 @@ A single file Django micro project created for demonstration purposes to be used
 
 ## 🏛️ History
 
-I created this code while working on an improvement to Will Vincent's Django Microframework repository, which was itself inspired by Carlton Gibson's talk.
+I created this code while working on an improvement to [Will Vincent](https://github.com/wsvincent)'s [Django Microframework](https://github.com/wsvincent/django-microframework) repository, which was itself inspired by a talk that [Carlton Gibson](https://github.com/carltongibson) gave at [DjangoCon US 2019](https://2019.djangocon.us/talks/using-django-as-a-micro-framework-on-the/): _"[Using Django as a Micro-Framework](https://www.youtube.com/watch?v=w9cYEovduWI)"_.
 
-Starting from that demonstration code I thought of a Django micro application that could be used in the same way as a minimal application used in other Python frameworks such as Flask or FastAPI.
+Starting from that demonstration code I thought of a `Django` micro application that could be used in the same way as a minimal application used in other `Python` frameworks such as `Flask` or `FastAPI`.
 
-I presented this code during the first sprint day of DjangoCon US 2023, together with Will Vincent and seeing the appreciation I decided to publish it in this repository.
+I presented this code during the [first sprint day](https://2023.djangocon.us/sprints/thursday/) of [DjangoCon US 2023](https://2023.djangocon.us), together with [Will Vincent](https://github.com/wsvincent) and seeing the appreciation I decided to publish it in this repository.
 
 [![μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina](https://cdn.fosstodon.org/media_attachments/files/111/262/282/120/320/402/original/0b644dcffe2eeecf.jpg)](https://fosstodon.org/@paulox/111262287902120294)
 
