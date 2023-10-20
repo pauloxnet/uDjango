@@ -14,7 +14,7 @@ I presented this code during the first sprint day of DjangoCon US 2023, together
 
 > μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina
 
-### 💻 Set Up
+## 💻 Set Up
 
 ### ⚗️ Virtualenv
 
@@ -30,7 +30,7 @@ $ source .venv/bin/activate
 Installing the required python packages in the virtual environments:
 
 ```console
-(.venv) $ python3 -m pip install django uvicorn[standard]
+$ python3 -m pip install django uvicorn
 ```
 ## 🧮 Code
 
@@ -59,7 +59,7 @@ urlpatterns = (path("", root),)
 Start the server with `uvicorn` command.
 
 ```console
-(.venv) $ uvicorn udjango:app --reload
+$ uvicorn udjango:app --reload
 ```
 
 ## 🔬 Check it
