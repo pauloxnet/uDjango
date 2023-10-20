@@ -76,6 +76,22 @@ You will see the JSON response as:
 
 This code is for demonstration purposes only and should not be used in production. However, the code is released without any guarantee from the author and no liability can be attributed. Use at your own risk.
 
+## 💬 Sharing
+
+Here's where the **μDjango** _(micro Django)_ project was shared online in case you want to re-share it.
+
+### 🦣 Mastodon
+
+- [https://fosstodon.org/@paulox/111262287902120294](https://fosstodon.org/@paulox/111262287902120294)
+
+### 🐦️ Twitter
+
+- [https://twitter.com/pauloxnet/status/1715020317372891574](https://twitter.com/pauloxnet/status/1715020317372891574)
+
+### 📣 Django forum
+
+- [https://forum.djangoproject.com/t/django-micro-django/24681](https://forum.djangoproject.com/t/django-micro-django/24681)
+
 ## ⚖️ License
 
 **μDjango** is licensed under the [BSD 3-Clause License](https://github.com/pauloxnet/uDjango/blob/main/LICENSE).
