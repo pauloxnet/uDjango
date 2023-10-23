@@ -1,15 +1,13 @@
-from django.conf import settings
-from django.core.handlers import asgi
-from django.http import JsonResponse
-from django.urls import path
+from django import conf, http, urls
+from django.core.handlers.asgi import ASGIHandler
 
-settings.configure(ALLOWED_HOSTS="*", ROOT_URLCONF=__name__)
+conf.settings.configure(ALLOWED_HOSTS="*", ROOT_URLCONF=__name__)
 
-app = asgi.ASGIHandler()
+app = ASGIHandler()
 
 
 async def root(request):
-    return JsonResponse({"message": "Hello World"})
+    return http.JsonResponse({"message": "Hello World"})
 
 
-urlpatterns = (path("", root),)
+urlpatterns = [urls.path("", root)]
