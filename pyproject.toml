@@ -1,0 +1,11 @@
+[tool.black]
+target-version = ["py312"]
+
+[tool.ruff]
+extend-exclude = ["__pycache__", ".venv"]
+select = ["A", "B", "C", "E", "F", "I", "W", "B9"]
+target-version = "py312"
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.12"

@@ -32,6 +32,7 @@ Installing the required python packages in the virtual environments:
 ```console
 $ python3 -m pip install django uvicorn
 ```
+
 ## 🧮 Code
 
 Create a new file called `udjango.py` and update it as follows:
@@ -69,7 +70,7 @@ Open your browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 You will see the JSON response as:
 
 ```json
-{"message": "Hello World"}
+{ "message": "Hello World" }
 ```
 
 ## ⚠️ Disclaimer
@@ -100,7 +101,7 @@ Here's where the **μDjango** _(micro Django)_ project was shared online in case
 
 ### 👤 Paolo Melchiorre
 
--   🌍 Blog: [www.paulox.net](https://www.paulox.net)
--   🐙 Github: [@pauloxnet@github.com](https://github.com/pauloxnet)
--   🦣 Mastodon: [@paulox@fosstodon.org](https://fosstodon.org/@paulox)
--   🐦️ Twitter: [@pauloxnet@twitter.com](https://twitter.com/pauloxnet)
+- 🌍 Blog: [www.paulox.net](https://www.paulox.net)
+- 🐙 Github: [@pauloxnet@github.com](https://github.com/pauloxnet)
+- 🦣 Mastodon: [@paulox@fosstodon.org](https://fosstodon.org/@paulox)
+- 🐦️ Twitter: [@pauloxnet@twitter.com](https://twitter.com/pauloxnet)
