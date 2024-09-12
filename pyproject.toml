@@ -1,5 +1,9 @@
 [tool.ruff]
-extend-select = [
+target-version = "py312"
+
+fix = true
+show-fixes = true
+lint.select = [
   "ASYNC",  # flake8-async
   "B",      # flake8-bugbear
   "C4",     # flake8-comprehensions
@@ -18,9 +22,4 @@ extend-select = [
   "UP",     # pyupgrade
   "W",      # pycodestyle warnings
 ]
-fix = true
-show-fixes = true
-target-version = "py312"
-
-[tool.ruff.isort]
-combine-as-imports = true
+lint.isort.combine-as-imports = true

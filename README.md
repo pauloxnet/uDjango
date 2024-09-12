@@ -10,7 +10,7 @@ Starting from that demonstration code I thought of a `Django` micro application 
 
 I presented this code during the [first sprint day](https://2023.djangocon.us/sprints/thursday/) of [DjangoCon US 2023](https://2023.djangocon.us), together with [Will Vincent](https://github.com/wsvincent) and seeing the appreciation I decided to publish it in this repository.
 
-[![μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina](https://cdn.fosstodon.org/media_attachments/files/111/262/282/120/320/402/original/0b644dcffe2eeecf.jpg)](https://fosstodon.org/@paulox/111262287902120294)
+[![μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina (USA)](https://cdn.fosstodon.org/media_attachments/files/111/262/282/120/320/402/original/0b644dcffe2eeecf.jpg "© 2023 Paolo Melchiorre CC BY-NC-SA “μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina (USA)”"){loading=lazy}](https://fosstodon.org/@paulox/111262287902120294)
 
 > μDjango presentation during the DjangoCon US 2023 sprints in Durham, North Carolina
 
@@ -30,20 +30,20 @@ $ source .venv/bin/activate
 Installing the required python packages in the virtual environments:
 
 ```console
-$ python3 -m pip install django uvicorn
+$ python -m pip install django uvicorn
 ```
 
 ## 🧮 Code
 
-Create a new file called `udjango.py` and update it as follows:
+Create a new file called `main.py` and update it as follows:
 
 ```python
 from django import conf, http, urls
-from django.core.handlers.asgi import ASGIHandler
+from django.core.handlers import asgi
 
 conf.settings.configure(ALLOWED_HOSTS="*", ROOT_URLCONF=__name__)
 
-app = ASGIHandler()
+app = asgi.ASGIHandler()
 
 
 async def root(request):
@@ -58,7 +58,16 @@ urlpatterns = [urls.path("", root)]
 Start the server with `uvicorn` command.
 
 ```console
-$ uvicorn udjango:app --reload
+$ uvicorn main:app --reload
+```
+
+```
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [...] using StatReload
+INFO:     Started server process [...]
+INFO:     Waiting for application startup.
+INFO:     ASGI 'lifespan' protocol appears unsupported.
+INFO:     Application startup complete.
 ```
 
 ## 🔬 Check it
