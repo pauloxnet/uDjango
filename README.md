@@ -16,6 +16,18 @@ I presented this code during the [first sprint day](https://2023.djangocon.us/sp
 
 ## 💻 Set Up
 
+### Python
+
+We need a stable and supported version of Python 3 (tested with Python 3.10-3.13):
+
+```console
+$ python3 --version
+```
+
+```console
+Python 3.13.0
+```
+
 ### ⚗️ Virtualenv
 
 Creating and activating the virtual environment:
@@ -31,6 +43,29 @@ Installing the required python packages in the virtual environments:
 
 ```console
 $ python -m pip install django uvicorn
+```
+
+```console
+Collecting django
+  Using cached Django-5.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting uvicorn
+  Using cached uvicorn-0.31.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting asgiref<4,>=3.8.1 (from django)
+  Using cached asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.5.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting click>=7.0 (from uvicorn)
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting h11>=0.8 (from uvicorn)
+  Using cached h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Using cached Django-5.1.2-py3-none-any.whl (8.3 MB)
+Using cached uvicorn-0.31.1-py3-none-any.whl (63 kB)
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached click-8.1.7-py3-none-any.whl (97 kB)
+Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+Using cached sqlparse-0.5.1-py3-none-any.whl (44 kB)
+Installing collected packages: sqlparse, h11, click, asgiref, uvicorn, django
+Successfully installed asgiref-3.8.1 click-8.1.7 django-5.1.2 h11-0.14.0 sqlparse-0.5.1 uvicorn-0.31.1
 ```
 
 ## 🧮 Code
@@ -61,7 +96,7 @@ Start the server with `uvicorn` command.
 $ uvicorn main:app --reload
 ```
 
-```
+```ini
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 INFO:     Started reloader process [...] using StatReload
 INFO:     Started server process [...]
