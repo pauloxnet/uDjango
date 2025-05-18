@@ -4,6 +4,9 @@ show-fixes = true
 target-version = "py313"
 
 [tool.ruff.lint]
+ignore = [
+  "ARG001",  # Unused function argument: `request`
+]
 select = [
   "A",     # flake8-builtins
   "AIR",   # Airflow

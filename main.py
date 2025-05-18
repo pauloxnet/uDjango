@@ -6,7 +6,7 @@ conf.settings.configure(ALLOWED_HOSTS="*", ROOT_URLCONF=__name__)
 app = asgi.ASGIHandler()
 
 
-async def root(_request: http.HttpRequest) -> http.JsonResponse:
+async def root(request: http.HttpRequest) -> http.JsonResponse:
     return http.JsonResponse({"message": "Hello World"})
 
 
